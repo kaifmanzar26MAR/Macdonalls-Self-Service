@@ -13,12 +13,12 @@ const HomeSelect = () => {
                 {
                     id:101,
                     name:"Burger",
-                    imageUrl:"/image/breakfast.jpeg",
+                    imageUrl:"/image/chicken-burger.jpg",
                     sub_item:[
                         {
                             id:10101,
-                            item_name:"Chiken Burger",
-                            imageurl:"/image/breakfast.jpeg",
+                            item_name:"Chicken Burger",
+                            imageurl:"/image/chicken-burger.jpg",
                             price:"199",
                             btn:"Add",
                             quantity:1,
@@ -27,7 +27,7 @@ const HomeSelect = () => {
                         {
                             id:10102,
                             item_name:"Allu Patti Burger",
-                            imageurl:"/image/breakfast.jpeg",
+                            imageurl:"/image/allu_patti.jpg",
                             price:"99",
                             btn:"Add",
                             quantity:1,
@@ -39,8 +39,29 @@ const HomeSelect = () => {
                 },{
                     id:102,
                     name:"Pizza",
-                    imageUrl:"/image/breakfast.jpeg",
-
+                    imageUrl:"/image/pizza.jpg",
+                    sub_item:[
+                        {
+                            id:10201,
+                            item_name:"Cheese Pizza",
+                            imageurl:"/image/cheese_pizza.webp",
+                            price:"199",
+                            btn:"Add",
+                            quantity:1,
+                            Special_Souce:1,Tomato_Souce:1,McSpicy_Patty:2,cheese:false,added_price:0,
+                        },
+                        {
+                            id:10202,
+                            item_name:"Chicken Supreme Pizza",
+                            imageurl:"/image/Chicken-Supreme.jpeg",
+                            price:"99",
+                            btn:"Add",
+                            quantity:1,
+                            Special_Souce:1,Tomato_Souce:1,McSpicy_Patty:2,cheese:false,added_price:0,
+                        },
+                        
+                       
+                    ]
                 }
             ]
         },{
@@ -53,11 +74,78 @@ const HomeSelect = () => {
                     id:201,
                     name:"Freanch fries",
                     imageUrl:"/image/Meal.jpeg",
-                    
+                    sub_item:[
+                        {
+                            id:10101,
+                            item_name:"Chicken Burger",
+                            imageurl:"/image/chicken-burger.jpg",
+                            price:"199",
+                            btn:"Add",
+                            quantity:1,
+                            Special_Souce:1,Tomato_Souce:1,McSpicy_Patty:2,cheese:false,added_price:0,
+                        },
+                        {
+                            id:10102,
+                            item_name:"Allu Patti Burger",
+                            imageurl:"/image/allu_patti.jpg",
+                            price:"99",
+                            btn:"Add",
+                            quantity:1,
+                            Special_Souce:1,Tomato_Souce:1,McSpicy_Patty:2,cheese:false,added_price:0,
+                        },
+                       
+                    ]
                 },{
                     id:202,
                     name:"Chikken wings",
-                    imageUrl:"/image/Meal.jpeg"
+                    imageUrl:"/image/Meal.jpeg",
+                    sub_item:[
+                        {
+                            id:10101,
+                            item_name:"Chicken Burger",
+                            imageurl:"/image/chicken-burger.jpg",
+                            price:"199",
+                            btn:"Add",
+                            quantity:1,
+                            Special_Souce:1,Tomato_Souce:1,McSpicy_Patty:2,cheese:false,added_price:0,
+                        },
+                        {
+                            id:10102,
+                            item_name:"Allu Patti Burger",
+                            imageurl:"/image/allu_patti.jpg",
+                            price:"99",
+                            btn:"Add",
+                            quantity:1,
+                            Special_Souce:1,Tomato_Souce:1,McSpicy_Patty:2,cheese:false,added_price:0,
+                        },
+                       
+                    ]
+                },{
+                    id:102,
+                    name:"Pizza",
+                    imageUrl:"/image/pizza.jpg",
+                    sub_item:[
+                        {
+                            id:10201,
+                            item_name:"Cheese Pizza",
+                            imageurl:"/image/cheese_pizza.webp",
+                            price:"199",
+                            btn:"Add",
+                            quantity:1,
+                            Special_Souce:1,Tomato_Souce:1,McSpicy_Patty:2,cheese:false,added_price:0,
+                        },
+                        {
+                            id:10202,
+                            item_name:"Chicken Supreme Pizza",
+                            imageurl:"/image/Chicken-Supreme.jpeg",
+                            price:"99",
+                            btn:"Add",
+                            quantity:1,
+                            Special_Souce:1,Tomato_Souce:1,McSpicy_Patty:2,cheese:false,added_price:0,
+                        },
+                        
+                       
+                    ]
                 }
             ]
         },{
@@ -69,11 +157,79 @@ const HomeSelect = () => {
                     id:301,
                     name:"Allu Biryani",
                     imageUrl:"/image/lunch.webp",
+                    sub_item:[
+                        {
+                            id:10101,
+                            item_name:"Chicken Burger",
+                            imageurl:"/image/chicken-burger.jpg",
+                            price:"199",
+                            btn:"Add",
+                            quantity:1,
+                            Special_Souce:1,Tomato_Souce:1,McSpicy_Patty:2,cheese:false,added_price:0,
+                        },
+                        {
+                            id:10102,
+                            item_name:"Allu Patti Burger",
+                            imageurl:"/image/allu_patti.jpg",
+                            price:"99",
+                            btn:"Add",
+                            quantity:1,
+                            Special_Souce:1,Tomato_Souce:1,McSpicy_Patty:2,cheese:false,added_price:0,
+                        },
+                       
+                    ]
                     
                 },{
                     id:302,
                     name:"Chikken Biryani",
-                    imageUrl:"/image/lunch.webp"
+                    imageUrl:"/image/lunch.webp",
+                    sub_item:[
+                        {
+                            id:10101,
+                            item_name:"Chicken Burger",
+                            imageurl:"/image/chicken-burger.jpg",
+                            price:"199",
+                            btn:"Add",
+                            quantity:1,
+                            Special_Souce:1,Tomato_Souce:1,McSpicy_Patty:2,cheese:false,added_price:0,
+                        },
+                        {
+                            id:10102,
+                            item_name:"Allu Patti Burger",
+                            imageurl:"/image/allu_patti.jpg",
+                            price:"99",
+                            btn:"Add",
+                            quantity:1,
+                            Special_Souce:1,Tomato_Souce:1,McSpicy_Patty:2,cheese:false,added_price:0,
+                        },
+                       
+                    ]
+                },{
+                    id:102,
+                    name:"Pizza",
+                    imageUrl:"/image/pizza.jpg",
+                    sub_item:[
+                        {
+                            id:10201,
+                            item_name:"Cheese Pizza",
+                            imageurl:"/image/cheese_pizza.webp",
+                            price:"199",
+                            btn:"Add",
+                            quantity:1,
+                            Special_Souce:1,Tomato_Souce:1,McSpicy_Patty:2,cheese:false,added_price:0,
+                        },
+                        {
+                            id:10202,
+                            item_name:"Chicken Supreme Pizza",
+                            imageurl:"/image/Chicken-Supreme.jpeg",
+                            price:"99",
+                            btn:"Add",
+                            quantity:1,
+                            Special_Souce:1,Tomato_Souce:1,McSpicy_Patty:2,cheese:false,added_price:0,
+                        },
+                        
+                       
+                    ]
                 }
             ]
         },
@@ -86,11 +242,52 @@ const HomeSelect = () => {
                     id:401,
                     name:"Roti",
                     imageUrl:"/image/dinner.webp",
-                    
+                    sub_item:[
+                        {
+                            id:10101,
+                            item_name:"Chicken Burger",
+                            imageurl:"/image/chicken-burger.jpg",
+                            price:"199",
+                            btn:"Add",
+                            quantity:1,
+                            Special_Souce:1,Tomato_Souce:1,McSpicy_Patty:2,cheese:false,added_price:0,
+                        },
+                        {
+                            id:10102,
+                            item_name:"Allu Patti Burger",
+                            imageurl:"/image/allu_patti.jpg",
+                            price:"99",
+                            btn:"Add",
+                            quantity:1,
+                            Special_Souce:1,Tomato_Souce:1,McSpicy_Patty:2,cheese:false,added_price:0,
+                        },
+                       
+                    ]
                 },{
                     id:402,
                     name:"Tadka",
-                    imageUrl:"/image/dinner.webp"
+                    imageUrl:"/image/dinner.webp",
+                    sub_item:[
+                        {
+                            id:10101,
+                            item_name:"Chicken Burger",
+                            imageurl:"/image/chicken-burger.jpg",
+                            price:"199",
+                            btn:"Add",
+                            quantity:1,
+                            Special_Souce:1,Tomato_Souce:1,McSpicy_Patty:2,cheese:false,added_price:0,
+                        },
+                        {
+                            id:10102,
+                            item_name:"Allu Patti Burger",
+                            imageurl:"/image/allu_patti.jpg",
+                            price:"99",
+                            btn:"Add",
+                            quantity:1,
+                            Special_Souce:1,Tomato_Souce:1,McSpicy_Patty:2,cheese:false,added_price:0,
+                        },
+                       
+                    ]
                 }
             ]
         },{
@@ -102,11 +299,52 @@ const HomeSelect = () => {
                     id:501,
                     name:"Coktail",
                     imageUrl:"/image/drinks.jpeg",
-                    
+                    sub_item:[
+                        {
+                            id:10101,
+                            item_name:"Chicken Burger",
+                            imageurl:"/image/chicken-burger.jpg",
+                            price:"199",
+                            btn:"Add",
+                            quantity:1,
+                            Special_Souce:1,Tomato_Souce:1,McSpicy_Patty:2,cheese:false,added_price:0,
+                        },
+                        {
+                            id:10102,
+                            item_name:"Allu Patti Burger",
+                            imageurl:"/image/allu_patti.jpg",
+                            price:"99",
+                            btn:"Add",
+                            quantity:1,
+                            Special_Souce:1,Tomato_Souce:1,McSpicy_Patty:2,cheese:false,added_price:0,
+                        },
+                       
+                    ]
                 },{
                     id:502,
                     name:"Vodka",
-                    imageUrl:"/image/drinks.jpeg"
+                    imageUrl:"/image/drinks.jpeg",
+                    sub_item:[
+                        {
+                            id:10101,
+                            item_name:"Chicken Burger",
+                            imageurl:"/image/chicken-burger.jpg",
+                            price:"199",
+                            btn:"Add",
+                            quantity:1,
+                            Special_Souce:1,Tomato_Souce:1,McSpicy_Patty:2,cheese:false,added_price:0,
+                        },
+                        {
+                            id:10102,
+                            item_name:"Allu Patti Burger",
+                            imageurl:"/image/allu_patti.jpg",
+                            price:"99",
+                            btn:"Add",
+                            quantity:1,
+                            Special_Souce:1,Tomato_Souce:1,McSpicy_Patty:2,cheese:false,added_price:0,
+                        },
+                       
+                    ]
                 }
             ]
         },{
@@ -118,11 +356,52 @@ const HomeSelect = () => {
                     id:601,
                     name:"Roti+Rice+Chiken",
                     imageUrl:"/image/familypack.png",
-                    
+                    sub_item:[
+                        {
+                            id:10101,
+                            item_name:"Chicken Burger",
+                            imageurl:"/image/chicken-burger.jpg",
+                            price:"199",
+                            btn:"Add",
+                            quantity:1,
+                            Special_Souce:1,Tomato_Souce:1,McSpicy_Patty:2,cheese:false,added_price:0,
+                        },
+                        {
+                            id:10102,
+                            item_name:"Allu Patti Burger",
+                            imageurl:"/image/allu_patti.jpg",
+                            price:"99",
+                            btn:"Add",
+                            quantity:1,
+                            Special_Souce:1,Tomato_Souce:1,McSpicy_Patty:2,cheese:false,added_price:0,
+                        },
+                       
+                    ]
                 },{
                     id:602,
                     name:"Tadka+Roti+Rice",
-                    imageUrl:"/image/familypack.png"
+                    imageUrl:"/image/familypack.png",
+                    sub_item:[
+                        {
+                            id:10101,
+                            item_name:"Chicken Burger",
+                            imageurl:"/image/chicken-burger.jpg",
+                            price:"199",
+                            btn:"Add",
+                            quantity:1,
+                            Special_Souce:1,Tomato_Souce:1,McSpicy_Patty:2,cheese:false,added_price:0,
+                        },
+                        {
+                            id:10102,
+                            item_name:"Allu Patti Burger",
+                            imageurl:"/image/allu_patti.jpg",
+                            price:"99",
+                            btn:"Add",
+                            quantity:1,
+                            Special_Souce:1,Tomato_Souce:1,McSpicy_Patty:2,cheese:false,added_price:0,
+                        },
+                       
+                    ]
                 }
             ]
         }
@@ -338,7 +617,7 @@ const HomeSelect = () => {
             {pindata ? <div className="additonal" id='addd'>
                 <div className="add_con">
                     <div className="inc">
-                        <img src="/image/breakfast.jpeg" alt="" />
+                        <img src={pindata.imageurl} alt="" />
                         <div>
                             <h2>Customise</h2>
                             <h1>{ pindata.item_name }</h1>
