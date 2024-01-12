@@ -474,7 +474,7 @@ const HomeSelect = () => {
                 {
                     data.map((e)=>{
                         return(
-                           <div className="side_menue_box" id='breakfast' key={e.id} onClick={()=>{setDisplaydata(e.items); setHeading(e.category)}}>
+                           <div className="side_menue_box" id='breakfast' key={e.id} onClick={()=>{setDisplaydata(e.items); document.getElementById('sub_menu').style.display="none"; setHeading(e.category)}}>
                                 <img src={e.image} alt="img" />
                                 <h3>{e.category}</h3>
                             </div> 

@@ -17,7 +17,8 @@ const Welcome = () => {
   return (
     <div className='welcome_container' id='wc' onClick={homeclick}>
       <div className="welcome_img" id='wi'>
-        <img src="/image/welcome_full.jpg" alt="signature" />
+        <img id='lap' src="/image/welcome_full.jpg" alt="signature" />
+        <img id='mob' src="/image/welcome.png" alt="signature" />
       </div>
       <div className="welcome_text" id='wt'>
         <img src="/image/site_logo.png" alt="mac" />
