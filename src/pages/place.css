@@ -314,6 +314,8 @@
 .additonal .add_con{
     width: 400px;
     height: 80%;
+    overflow-y: auto;
+    overflow-x: auto;
 }
 .add_con .inc{
     display: flex;
@@ -468,7 +470,8 @@
     }
     .additonal .add_con{
         width: 80%;
-        height: fit-content;
+        /* height: fit-content; */
+
     }
     .add_con h1{
         font-size: 6vmin;
