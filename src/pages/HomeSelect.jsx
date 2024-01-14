@@ -1,8 +1,10 @@
 import React, { useContext, useEffect, useState } from 'react'
 import './place.css'
 import MyContext from '../Context/MyContext';
+import { useNavigate } from 'react-router-dom';
+
 const HomeSelect = () => {
-    
+    const navigate=useNavigate();
     const data=[
         {
             id:1,
@@ -406,7 +408,7 @@ const HomeSelect = () => {
             ]
         }
     ];
-    const {paymentMethod}=useContext(MyContext);
+    const {paymentMethod, placeSelect}=useContext(MyContext);
     const [displaydata,setDisplaydata]=useState(data[0].items);
     const [heading,setHeading]=useState(data[0].category);
     const [sub_items,setSub_items]=useState(data[0].items[0].sub_item);
@@ -511,7 +513,7 @@ const HomeSelect = () => {
                                             <h5>Rs.{e.price}/pc</h5>
                                             <button 
                                             style={{cursor:"pointer", padding:"10px", marginTop:"10px",width:"50%",backgroundColor:"#1c8af1",border:"none",color:"white",borderRadius:"20px"}}
-                                            onClick={()=>{addingdatatocart(e)}}
+                                            onClick={()=>{addingdatatocart(e); alert("Added, See at bottom")}}
                                             >{e.btn}</button>
                                         </div>
                                     )
@@ -582,14 +584,19 @@ const HomeSelect = () => {
                     <div className="cancel_oreder" style={{backgroundColor:"red"}} onClick={()=>{setCartdata(new Set()); setTax(0); setTotalprice(0);}}>
                         Cancel Order
                     </div>
+        
                     <div className="done" style={{backgroundColor:"green"}} onClick={()=>{document.getElementById('ond').style.display="flex"}}>Done</div>
+        
                 </div> : ""
             }
 
             {/* Billing section */}
             <div className="ondone" id='ond'>
                 <img src="/image/site_logo.png" alt="logo" />
-                <h2 style={{color:"white"}}>Your Eat In Order</h2>
+                <div id="print">
+
+                
+                <h2 style={{color:"white"}}>Your {placeSelect} Order @Macdonals</h2>
                 <div className="ondone_cont">
                     <h3>OrderId: {`${Date.now()}_${Math.floor(Math.random()*200)}`}</h3>
                     {
@@ -604,10 +611,37 @@ const HomeSelect = () => {
                     <h3>Total tax: {tax}</h3>
                     <hr />
                     <h2>Grand Total : {tax + totalprice}</h2>
+                    <h2>Payment Method: {paymentMethod}</h2>
                     <br />
-                    <button style={{backgroundColor:"green", color:'white'}}>Proceed to Pay</button>
+                    
+                    {
+                        paymentMethod==='Cash At Counter'?
+                        <button style={{backgroundColor:"green", color:'white'}} onClick={()=>{
+                            console.log("pirnt");
+                            let printContents=document.getElementById('print').innerHTML;
+                            let originalContents=document.body.innerHTML;
+                            document.body.innerHTML=printContents;
+                            window.print();
+                            document.body.innerHTML=originalContents;
+                            document.getElementById('ond').style.display="none"
+                            navigate('/');
+                            location.reload();
+                        }}>Print Bill</button>
+                        :<button style={{backgroundColor:"green", color:'white'}}  onClick={()=>{
+                            alert("Supposing payemt is done")
+                            let printContents=document.getElementById('print').innerHTML;
+                            let originalContents=document.body.innerHTML;
+                            document.body.innerHTML=printContents;
+                            window.print();
+                            document.body.innerHTML=originalContents;
+                            document.getElementById('ond').style.display="none"
+                            navigate('/');
+                            location.reload();
+                        }}>Proceed to Pay</button>
+                    }
                     <button style={{backgroundColor:"red",color:"white"}} onClick={()=>{document.getElementById('ond').style.display="none"}}>Back</button>
                 </div>
+            </div>
             </div>
             </div>
 

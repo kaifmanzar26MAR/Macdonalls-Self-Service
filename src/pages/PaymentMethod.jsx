@@ -24,7 +24,7 @@ const PaymentMethod = () => {
 
         <img src="/image/site_logo.png" alt="" />
         <h2>Select Payment Method</h2>
-        <div className="cont paycont">
+        <div className="cont paycont" id='cpay'>
             <div className="returnbtn paymenue" onClick={()=>{window.history.back()}}>
                 return
             </div>
